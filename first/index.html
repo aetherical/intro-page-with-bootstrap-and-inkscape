@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intro Page version one</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <div id="container" class="container-narrow">
+      <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" id="graphic">
+        <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+        <g id="constant">
+          <title>Layer 1</title>
+          <rect id="svg_3" height="1" width="0" y="19" x="-193" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="#FF0000"/>
+          <g id="group1">
+            <rect id="rect1" height="72" width="120" y="58" x="47" stroke-width="5" stroke="#000000" fill="#FF0000">One</rect>
+            <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="one_txt" y="86" x="76" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">One</text>
+          </g>
+          <g id="group2">
+            <rect id="rect2" height="155" width="86" y="60" x="410" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="#FF0000"/>
+            <text transform="matrix(1 0 0 1.1071 17 -11.1318)" stroke="#000000" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_6" y="106" x="429" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" fill="#000000">Two</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+    <script>
+      $('#group1').tooltip({title: "Group the first", container:
+      'body'});
+      $('#group2').popover({title: "This is cool", placement: 'auto',
+      content: "For the win", container: 'body'});
+    </script>
+  </body>
+</html>
